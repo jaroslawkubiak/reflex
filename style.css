@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+:root{
+  --primary-color: #ff1e00;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #1e1e1e;
+  background-color: #868685;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+button {
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  padding: 15px 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-wrapper{
+  width: 100%;
+  height: 300px;
+  display: grid;
+  place-content: center;
+}
+
+.touchArea {
+  border: 2px solid rgb(39, 39, 39);
+  /* background-color: rgb(209, 207, 207); */
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  /* margin-bottom: 50px; */
+}
+
+.falstart{
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+svg {
+  fill: rgb(0, 0, 0);
+  height: 7em;
+  width: 7em;
+  margin: 50px;
+}
+
+.yourResultText,
+.yourResultScore {
+  font-size: 2rem;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+.yourResultScore {
+  font-weight: bold;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid rgb(26, 93, 217); */
+  /* height: 50vh; */
+  min-width: 350px;
+}
+
+.description{
+  padding: 10px;
+}
+
+.light-wrapper {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+}
+
+.light {
+  margin-bottom: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.bc-red {
+  background-color: var(--primary-color);
+}
+
+.bc-green {
+  background-color: rgb(2, 208, 2);
+}
+.bc-orange {
+  background-color: rgb(255, 115, 0);
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
