@@ -17,7 +17,6 @@ const redLightsSection5 = document.getElementById("section-5");
 const TIME_COUNT = 1;
 let delayAfterStart, timerStart ,timerStop ,timer1, timer2, timer3, timer4, timer5, timerLightsOff;
 
-
 function lightsOn(section) {
   section.classList.remove("opacity-30");
 }
@@ -48,8 +47,6 @@ function stop() {
   redLightsSection4.classList.remove("opacity-30");
   redLightsSection5.classList.remove("opacity-30");
 
-  // console.log(timerStart, timerStop);
-
   if (timerStart) {
     let result = (timerStop - timerStart) / 1000;
     yourResultText.innerText = `Your result`;
@@ -69,7 +66,6 @@ function stop() {
 
 
 function startGame() {
-  // console.log("start game");
   timerStart = null;
   timerStop = null;
   delayAfterStart = Math.random() * 1500;
@@ -89,7 +85,6 @@ function startGame() {
   btnStart.classList.add("display-none");
 
   // start counting
-
   timer1 = setTimeout(lightsOn, 1000 * TIME_COUNT, redLightsSection1);
   timer2 = setTimeout(lightsOn, 2000 * TIME_COUNT, redLightsSection2);
   timer3 = setTimeout(lightsOn, 3000 * TIME_COUNT, redLightsSection3);
@@ -99,5 +94,4 @@ function startGame() {
 }
 
 btnStart.addEventListener("click", startGame);
-
 touchArea.addEventListener("click", stop);

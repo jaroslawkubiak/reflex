@@ -61,7 +61,6 @@ button {
 
 .touchArea {
   border: 2px solid rgb(39, 39, 39);
-  /* background-color: rgb(209, 207, 207); */
   background-color: var(--primary-color);
   border-radius: 10px;
   display: grid;
@@ -98,8 +97,6 @@ svg {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* border: 2px solid rgb(26, 93, 217); */
-  /* height: 50vh; */
   min-width: 350px;
 }
 
