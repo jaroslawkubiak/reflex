@@ -129,9 +129,9 @@ svg {
   opacity: 0.3;
 }
 
-@media screen and (orientation: landscape) {
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
   html {
     transform: rotate(-90deg);
-
   }
 }
